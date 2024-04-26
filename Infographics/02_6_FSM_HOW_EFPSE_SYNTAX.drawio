@@ -1,0 +1,238 @@
+<mxfile host="65bd71144e">
+    <diagram id="GAWc1gAhpG-Zxj6IqSYM" name="Page-1">
+        <mxGraphModel dx="1198" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;How do a finite state machine?&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="180" width="530" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="endArrow=none;html=1;fontSize=36;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;rounded=0;" parent="1" source="2" target="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="330" y="200" as="sourcePoint"/>
+                        <mxPoint x="380" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="72" value="" style="edgeStyle=none;html=1;strokeColor=#00FFFF;fontFamily=Courier New;fontSize=27;startArrow=none;" parent="1" edge="1" source="124">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="227.66666666666663" y="880" as="sourcePoint"/>
+                        <mxPoint x="227.66666666666663" y="880" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;In EFPSE&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;rotation=-15;" parent="1" vertex="1">
+                    <mxGeometry x="674" y="17" width="129" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;SYNTAX&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="431" y="124" width="75" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="endArrow=none;html=1;fontSize=18;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="160" as="sourcePoint"/>
+                        <mxPoint x="827.5" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="91" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;In English&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="706" y="134" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="" style="endArrow=classic;html=1;fontSize=18;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#66CC00;strokeWidth=2;" parent="1" target="84" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="674" y="258.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="674" y="330" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="674" y="330"/>
+                            <mxPoint x="390" y="330"/>
+                            <mxPoint x="390" y="560"/>
+                            <mxPoint x="390" y="635"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="96" value="" style="endArrow=classic;html=1;fontSize=18;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#0000CC;" parent="1" target="86" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="770" y="258.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="770" y="320" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="770" y="340"/>
+                            <mxPoint x="380" y="340"/>
+                            <mxPoint x="380" y="500"/>
+                            <mxPoint x="380" y="715"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="97" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;What does this line say?&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=30;position=0.06;position2=0;" vertex="1" parent="1">
+                    <mxGeometry x="419" y="560" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="364" y="630" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAHlBMVEUAAAAAAAB2QkW2YW7Tgn3Thn7pmY71raf1wLr////Y9Bk9AAAAAXRSTlMAQObYZgAAAQNJREFUeAG10lHO2zAMA+DRZCjf/8S/JMeF6wHby8YAaQp+kY26v/5rgL/05O8CO/08bgFQrohF4PgWkGPHSUTGCbDrmYkQyOEDII5+iUHhXJ+SD2B+9cwi3GTGAuanB7xeU8wlImPh6qdVt3hj462leAe4VRHH3CMguuusFpMz9eQFgHddliG77wmBV4yI4fDIUN1Ls0QCvAegqvr1Kiz1R4HeV6XX76J/A+ddBSbz6jVblIt0Q7bQoK4NokBEDIKy1qF/wBreYzAA9RZS7D20sJy3BxmbOM8xI47Bx37cQMdZnXmeh8jM6+/GDai1OXyDWN/37CunB8QLXLkW/9Owf5MfF+0LTJktf40AAAAASUVORK5CYII=;" vertex="1" parent="1">
+                    <mxGeometry x="368" y="634" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;This script says to load an &lt;font face=&quot;Courier New&quot;&gt;image &lt;/font&gt;called &lt;font face=&quot;Courier New&quot;&gt;Decoration&lt;/font&gt; frames &lt;font face=&quot;Courier New&quot;&gt;0&lt;/font&gt; through &lt;font face=&quot;Courier New&quot;&gt;4&lt;/font&gt;.&lt;br&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=40;position=0.81;position2=1;base=21;align=left;arcSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="419" y="660" width="310" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="741" y="790" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABFFBMVEUAAAAAAAAYCQAsGQAxDgA0NDQ3HgA6IgA8GgA9HQA/JQBDIwBEJABHNQdPMwBUOwBWPwBWQQBcRABcRBNcSQBeTQBgRwBhUAtiTwBiUABjUABkUwBkVQBlUgBmZmZoUhtvYDBwYh10aTV1Yy91aDt6azF8bzJ9bTN9cDN+cDl+cEN+cTqCdUWEdUCFeECGekeHeUaNgk+Ng02PhFKRg0+ShFCWi1iXiVeajlqcj12ck2Kell+glmShl2OhmGSlnGenoWypn22po3Gso3Gso3OupHeup3Wxqnixq3qyq3myrHu1rX21rn+3r4W3soW8t4vBvI/Dv5PFwZXHwprLx5vNy6PT0Kvf2rbi3brv6s7299v////yZfJsAAAAAXRSTlMAQObYZgAAAVJJREFUeNrNkNlSwkAQRWkTxBhsNAaNZkTbDRTiOoA6rrgBSoIGFOX//8OJWAUklfLN8ryeU3eWxP8B4Bfv+jKB+AxEQQh0/R7EBQXhu6KAblywKPznnosFAXEn9JvvLbkRcws48OBD9Ft+jVtcNlEvup+9DnRbwuKXD1WCaJBLvnld71pw6/S1cREtRDLndbz7o5LFzx/bVwKjRU1SKSEXvHlS5xS9xmqlUlrA7fKNXa7LikHIG6Sl08T39l8y61wuOPMwHqxUt9BgxA5vU7YdLGyEJ86elhTMFNubKXRILhggGQ3W7nYUjURxEh07KJZJNPTRBHaPp2c4KWjbeXKIGUgUKuZAJUVBNFmemDkFANgYPyUBqqJpJprIZvUJkHAIvQVRVTCLDHUI0HnIEydQ1aCAb7gOY55LL0HKDp6oU/gvJD87gYGhj+wMzNBHd/6YL244MEYzbemVAAAAAElFTkSuQmCC;" vertex="1" parent="1">
+                    <mxGeometry x="745" y="794" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;And then?&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=30;position=0.06;position2=0;" vertex="1" parent="1">
+                    <mxGeometry x="419" y="820" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="364" y="890" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAHlBMVEUAAAAAAAB2QkW2YW7Tgn3Thn7pmY71raf1wLr////Y9Bk9AAAAAXRSTlMAQObYZgAAAQNJREFUeAG10lHO2zAMA+DRZCjf/8S/JMeF6wHby8YAaQp+kY26v/5rgL/05O8CO/08bgFQrohF4PgWkGPHSUTGCbDrmYkQyOEDII5+iUHhXJ+SD2B+9cwi3GTGAuanB7xeU8wlImPh6qdVt3hj462leAe4VRHH3CMguuusFpMz9eQFgHddliG77wmBV4yI4fDIUN1Ls0QCvAegqvr1Kiz1R4HeV6XX76J/A+ddBSbz6jVblIt0Q7bQoK4NokBEDIKy1qF/wBreYzAA9RZS7D20sJy3BxmbOM8xI47Bx37cQMdZnXmeh8jM6+/GDai1OXyDWN/37CunB8QLXLkW/9Owf5MfF+0LTJktf40AAAAASUVORK5CYII=;" vertex="1" parent="1">
+                    <mxGeometry x="368" y="894" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Make a state called &lt;font face=&quot;Courier New&quot;&gt;IDLE &lt;/font&gt;that repeats with two frames where they're both the &lt;font face=&quot;Courier New&quot;&gt;0th&lt;/font&gt; image from the &lt;font face=&quot;Courier New&quot;&gt;Decoration&lt;/font&gt; &lt;font face=&quot;Courier New&quot;&gt;image&lt;/font&gt; list and they both last&lt;font face=&quot;Courier New&quot;&gt; .25&lt;/font&gt; seconds; set the last frame's action to be &lt;font face=&quot;Courier New&quot;&gt;READY&lt;/font&gt;. Because &lt;font face=&quot;Courier New&quot;&gt;NONE &lt;/font&gt;is set as the transition, state loop indefinitely&lt;br&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=40;position=0.81;position2=1;base=21;align=left;arcSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="419" y="910" width="312" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="741" y="1130" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABFFBMVEUAAAAAAAAYCQAsGQAxDgA0NDQ3HgA6IgA8GgA9HQA/JQBDIwBEJABHNQdPMwBUOwBWPwBWQQBcRABcRBNcSQBeTQBgRwBhUAtiTwBiUABjUABkUwBkVQBlUgBmZmZoUhtvYDBwYh10aTV1Yy91aDt6azF8bzJ9bTN9cDN+cDl+cEN+cTqCdUWEdUCFeECGekeHeUaNgk+Ng02PhFKRg0+ShFCWi1iXiVeajlqcj12ck2Kell+glmShl2OhmGSlnGenoWypn22po3Gso3Gso3OupHeup3Wxqnixq3qyq3myrHu1rX21rn+3r4W3soW8t4vBvI/Dv5PFwZXHwprLx5vNy6PT0Kvf2rbi3brv6s7299v////yZfJsAAAAAXRSTlMAQObYZgAAAVJJREFUeNrNkNlSwkAQRWkTxBhsNAaNZkTbDRTiOoA6rrgBSoIGFOX//8OJWAUklfLN8ryeU3eWxP8B4Bfv+jKB+AxEQQh0/R7EBQXhu6KAblywKPznnosFAXEn9JvvLbkRcws48OBD9Ft+jVtcNlEvup+9DnRbwuKXD1WCaJBLvnld71pw6/S1cREtRDLndbz7o5LFzx/bVwKjRU1SKSEXvHlS5xS9xmqlUlrA7fKNXa7LikHIG6Sl08T39l8y61wuOPMwHqxUt9BgxA5vU7YdLGyEJ86elhTMFNubKXRILhggGQ3W7nYUjURxEh07KJZJNPTRBHaPp2c4KWjbeXKIGUgUKuZAJUVBNFmemDkFANgYPyUBqqJpJprIZvUJkHAIvQVRVTCLDHUI0HnIEydQ1aCAb7gOY55LL0HKDp6oU/gvJD87gYGhj+wMzNBHd/6YL244MEYzbemVAAAAAElFTkSuQmCC;" vertex="1" parent="1">
+                    <mxGeometry x="745" y="1134" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;And then?&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=30;position=0.06;position2=0;" vertex="1" parent="1">
+                    <mxGeometry x="419" y="1180" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="364" y="1250" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAHlBMVEUAAAAAAAB2QkW2YW7Tgn3Thn7pmY71raf1wLr////Y9Bk9AAAAAXRSTlMAQObYZgAAAQNJREFUeAG10lHO2zAMA+DRZCjf/8S/JMeF6wHby8YAaQp+kY26v/5rgL/05O8CO/08bgFQrohF4PgWkGPHSUTGCbDrmYkQyOEDII5+iUHhXJ+SD2B+9cwi3GTGAuanB7xeU8wlImPh6qdVt3hj462leAe4VRHH3CMguuusFpMz9eQFgHddliG77wmBV4yI4fDIUN1Ls0QCvAegqvr1Kiz1R4HeV6XX76J/A+ddBSbz6jVblIt0Q7bQoK4NokBEDIKy1qF/wBreYzAA9RZS7D20sJy3BxmbOM8xI47Bx37cQMdZnXmeh8jM6+/GDai1OXyDWN/37CunB8QLXLkW/9Owf5MfF+0LTJktf40AAAAASUVORK5CYII=;" vertex="1" parent="1">
+                    <mxGeometry x="368" y="1254" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Make a state called &lt;font face=&quot;Courier New&quot;&gt;DEATH&lt;/font&gt; that transitions into the &lt;font face=&quot;Courier New&quot;&gt;DEAD &lt;/font&gt;state. Make the state have three frames starting at &lt;font face=&quot;Courier New&quot;&gt;1&lt;/font&gt; ending at &lt;font face=&quot;Courier New&quot;&gt;3&lt;/font&gt;, and make each of them last for&amp;nbsp; &lt;font face=&quot;Courier New&quot;&gt;.166&lt;/font&gt; seconds. Do not invoke any actions in this state.&lt;br&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=40;position=0.81;position2=1;base=21;align=left;arcSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="415" y="1300" width="312" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="737" y="1500" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABFFBMVEUAAAAAAAAYCQAsGQAxDgA0NDQ3HgA6IgA8GgA9HQA/JQBDIwBEJABHNQdPMwBUOwBWPwBWQQBcRABcRBNcSQBeTQBgRwBhUAtiTwBiUABjUABkUwBkVQBlUgBmZmZoUhtvYDBwYh10aTV1Yy91aDt6azF8bzJ9bTN9cDN+cDl+cEN+cTqCdUWEdUCFeECGekeHeUaNgk+Ng02PhFKRg0+ShFCWi1iXiVeajlqcj12ck2Kell+glmShl2OhmGSlnGenoWypn22po3Gso3Gso3OupHeup3Wxqnixq3qyq3myrHu1rX21rn+3r4W3soW8t4vBvI/Dv5PFwZXHwprLx5vNy6PT0Kvf2rbi3brv6s7299v////yZfJsAAAAAXRSTlMAQObYZgAAAVJJREFUeNrNkNlSwkAQRWkTxBhsNAaNZkTbDRTiOoA6rrgBSoIGFOX//8OJWAUklfLN8ryeU3eWxP8B4Bfv+jKB+AxEQQh0/R7EBQXhu6KAblywKPznnosFAXEn9JvvLbkRcws48OBD9Ft+jVtcNlEvup+9DnRbwuKXD1WCaJBLvnld71pw6/S1cREtRDLndbz7o5LFzx/bVwKjRU1SKSEXvHlS5xS9xmqlUlrA7fKNXa7LikHIG6Sl08T39l8y61wuOPMwHqxUt9BgxA5vU7YdLGyEJ86elhTMFNubKXRILhggGQ3W7nYUjURxEh07KJZJNPTRBHaPp2c4KWjbeXKIGUgUKuZAJUVBNFmemDkFANgYPyUBqqJpJprIZvUJkHAIvQVRVTCLDHUI0HnIEydQ1aCAb7gOY55LL0HKDp6oU/gvJD87gYGhj+wMzNBHd/6YL244MEYzbemVAAAAAElFTkSuQmCC;" vertex="1" parent="1">
+                    <mxGeometry x="741" y="1504" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;OK and finally?&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=30;position=0.06;position2=0;" vertex="1" parent="1">
+                    <mxGeometry x="419" y="1570" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="364" y="1640" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAHlBMVEUAAAAAAAB2QkW2YW7Tgn3Thn7pmY71raf1wLr////Y9Bk9AAAAAXRSTlMAQObYZgAAAQNJREFUeAG10lHO2zAMA+DRZCjf/8S/JMeF6wHby8YAaQp+kY26v/5rgL/05O8CO/08bgFQrohF4PgWkGPHSUTGCbDrmYkQyOEDII5+iUHhXJ+SD2B+9cwi3GTGAuanB7xeU8wlImPh6qdVt3hj462leAe4VRHH3CMguuusFpMz9eQFgHddliG77wmBV4yI4fDIUN1Ls0QCvAegqvr1Kiz1R4HeV6XX76J/A+ddBSbz6jVblIt0Q7bQoK4NokBEDIKy1qF/wBreYzAA9RZS7D20sJy3BxmbOM8xI47Bx37cQMdZnXmeh8jM6+/GDai1OXyDWN/37CunB8QLXLkW/9Owf5MfF+0LTJktf40AAAAASUVORK5CYII=;" vertex="1" parent="1">
+                    <mxGeometry x="368" y="1644" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Define a state called dead that loops forever. There'll be two frames each using the 4th image from the decoration list display both of them for Point 25 seconds. Do not perform any actions in this state&lt;br&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=40;position=0.81;position2=1;base=21;align=left;arcSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="415" y="1690" width="312" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="737" y="1890" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABFFBMVEUAAAAAAAAYCQAsGQAxDgA0NDQ3HgA6IgA8GgA9HQA/JQBDIwBEJABHNQdPMwBUOwBWPwBWQQBcRABcRBNcSQBeTQBgRwBhUAtiTwBiUABjUABkUwBkVQBlUgBmZmZoUhtvYDBwYh10aTV1Yy91aDt6azF8bzJ9bTN9cDN+cDl+cEN+cTqCdUWEdUCFeECGekeHeUaNgk+Ng02PhFKRg0+ShFCWi1iXiVeajlqcj12ck2Kell+glmShl2OhmGSlnGenoWypn22po3Gso3Gso3OupHeup3Wxqnixq3qyq3myrHu1rX21rn+3r4W3soW8t4vBvI/Dv5PFwZXHwprLx5vNy6PT0Kvf2rbi3brv6s7299v////yZfJsAAAAAXRSTlMAQObYZgAAAVJJREFUeNrNkNlSwkAQRWkTxBhsNAaNZkTbDRTiOoA6rrgBSoIGFOX//8OJWAUklfLN8ryeU3eWxP8B4Bfv+jKB+AxEQQh0/R7EBQXhu6KAblywKPznnosFAXEn9JvvLbkRcws48OBD9Ft+jVtcNlEvup+9DnRbwuKXD1WCaJBLvnld71pw6/S1cREtRDLndbz7o5LFzx/bVwKjRU1SKSEXvHlS5xS9xmqlUlrA7fKNXa7LikHIG6Sl08T39l8y61wuOPMwHqxUt9BgxA5vU7YdLGyEJ86elhTMFNubKXRILhggGQ3W7nYUjURxEh07KJZJNPTRBHaPp2c4KWjbeXKIGUgUKuZAJUVBNFmemDkFANgYPyUBqqJpJprIZvUJkHAIvQVRVTCLDHUI0HnIEydQ1aCAb7gOY55LL0HKDp6oU/gvJD87gYGhj+wMzNBHd/6YL244MEYzbemVAAAAAElFTkSuQmCC;" vertex="1" parent="1">
+                    <mxGeometry x="741" y="1894" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;image Decoration 0 4&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;shadow=1;sketch=0;fontFamily=Courier New;fontSize=18;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="131" y="610" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="" style="edgeStyle=none;html=1;strokeColor=#00FFFF;fontFamily=Courier New;fontSize=27;endArrow=none;" edge="1" parent="1" target="124">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="227.66666666666652" y="880" as="sourcePoint"/>
+                        <mxPoint x="227.66666666666652" y="880" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="124" value="&lt;p style=&quot;line-height: 70%;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;state IDLE NONE 0&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;frame 0 0.25 0 0 0 NONE&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;frame 0 0.25 0 0 0 READY&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;/p&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;shadow=1;sketch=0;fontFamily=Courier New;fontSize=18;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="131" y="855" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="" style="edgeStyle=none;html=1;strokeColor=#00FFFF;fontFamily=Courier New;fontSize=27;startArrow=none;" edge="1" parent="1" source="129">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="227.66666666666663" y="1240" as="sourcePoint"/>
+                        <mxPoint x="227.66666666666652" y="1240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="128" value="" style="edgeStyle=none;html=1;strokeColor=#00FFFF;fontFamily=Courier New;fontSize=27;endArrow=none;" edge="1" parent="1" target="129">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="227.66666666666652" y="1240" as="sourcePoint"/>
+                        <mxPoint x="227.66666666666652" y="1240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="129" value="&lt;p style=&quot;line-height: 70%;&quot;&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;state DEATH DEAD 0&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;frame 1 0.166 0 0 0 NONE&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;frame 2 0.166 0 0 0 NONE&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;frame 3 0.166 0 0 0 NONE&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;/p&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;shadow=1;sketch=0;fontFamily=Courier New;fontSize=18;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="131" y="1215" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="&lt;p style=&quot;line-height: 70%;&quot;&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;state DEAD NONE 0&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;frame 4 0.25 0 0 0 NONE&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;frame 4 0.25 0 0 0 NONE&lt;/span&gt;&lt;br style=&quot;font-size: 12px;&quot;&gt;&lt;/p&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;rounded=1;shadow=1;sketch=0;fontFamily=Courier New;fontSize=18;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="131" y="1605" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Hey quokka, can you please help translate this state script?&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=30;position=0.06;position2=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="427" y="170" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="372" y="240" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAHlBMVEUAAAAAAAB2QkW2YW7Tgn3Thn7pmY71raf1wLr////Y9Bk9AAAAAXRSTlMAQObYZgAAAQNJREFUeAG10lHO2zAMA+DRZCjf/8S/JMeF6wHby8YAaQp+kY26v/5rgL/05O8CO/08bgFQrohF4PgWkGPHSUTGCbDrmYkQyOEDII5+iUHhXJ+SD2B+9cwi3GTGAuanB7xeU8wlImPh6qdVt3hj462leAe4VRHH3CMguuusFpMz9eQFgHddliG77wmBV4yI4fDIUN1Ls0QCvAegqvr1Kiz1R4HeV6XX76J/A+ddBSbz6jVblIt0Q7bQoK4NokBEDIKy1qF/wBreYzAA9RZS7D20sJy3BxmbOM8xI47Bx37cQMdZnXmeh8jM6+/GDai1OXyDWN/37CunB8QLXLkW/9Owf5MfF+0LTJktf40AAAAASUVORK5CYII=;" vertex="1" parent="1">
+                    <mxGeometry x="376" y="244" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px; background-color: initial;&quot;&gt;Sure!&lt;/span&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=20;position=0.72;position2=0.91;base=21;align=center;arcSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="280" width="310" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="745" y="360" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABFFBMVEUAAAAAAAAYCQAsGQAxDgA0NDQ3HgA6IgA8GgA9HQA/JQBDIwBEJABHNQdPMwBUOwBWPwBWQQBcRABcRBNcSQBeTQBgRwBhUAtiTwBiUABjUABkUwBkVQBlUgBmZmZoUhtvYDBwYh10aTV1Yy91aDt6azF8bzJ9bTN9cDN+cDl+cEN+cTqCdUWEdUCFeECGekeHeUaNgk+Ng02PhFKRg0+ShFCWi1iXiVeajlqcj12ck2Kell+glmShl2OhmGSlnGenoWypn22po3Gso3Gso3OupHeup3Wxqnixq3qyq3myrHu1rX21rn+3r4W3soW8t4vBvI/Dv5PFwZXHwprLx5vNy6PT0Kvf2rbi3brv6s7299v////yZfJsAAAAAXRSTlMAQObYZgAAAVJJREFUeNrNkNlSwkAQRWkTxBhsNAaNZkTbDRTiOoA6rrgBSoIGFOX//8OJWAUklfLN8ryeU3eWxP8B4Bfv+jKB+AxEQQh0/R7EBQXhu6KAblywKPznnosFAXEn9JvvLbkRcws48OBD9Ft+jVtcNlEvup+9DnRbwuKXD1WCaJBLvnld71pw6/S1cREtRDLndbz7o5LFzx/bVwKjRU1SKSEXvHlS5xS9xmqlUlrA7fKNXa7LikHIG6Sl08T39l8y61wuOPMwHqxUt9BgxA5vU7YdLGyEJ86elhTMFNubKXRILhggGQ3W7nYUjURxEh07KJZJNPTRBHaPp2c4KWjbeXKIGUgUKuZAJUVBNFmemDkFANgYPyUBqqJpJprIZvUJkHAIvQVRVTCLDHUI0HnIEydQ1aCAb7gOY55LL0HKDp6oU/gvJD87gYGhj+wMzNBHd/6YL244MEYzbemVAAAAAElFTkSuQmCC;" vertex="1" parent="1">
+                    <mxGeometry x="749" y="364" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" value="Decoration.states" style="swimlane;whiteSpace=wrap;html=1;gradientColor=none;fillColor=default;swimlaneLine=1;labelBackgroundColor=none;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="133" y="164" width="200" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=default;gradientColor=none;" vertex="1" parent="141">
+                    <mxGeometry y="20" width="200" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="&lt;font face=&quot;Courier New&quot;&gt;image Decoration 0 4&lt;br&gt;&lt;br&gt;&lt;br&gt;state IDLE NONE 0&lt;br&gt;frame 0 0.25 0 0 0 NONE&lt;br&gt;frame 0 0.25 0 0 0 READY&lt;br&gt;&lt;br&gt;&lt;br&gt;state DEATH DEAD 0&lt;br&gt;frame 1 0.166 0 0 0 NONE&lt;br&gt;frame 2 0.166 0 0 0 NONE&lt;br&gt;frame 3 0.166 0 0 0 NONE&lt;br&gt;&lt;br&gt;&lt;br&gt;state DEAD NONE 0&lt;br&gt;frame 4 0.25 0 0 0 NONE&lt;br&gt;frame 4 0.25 0 0 0 NONE&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="141">
+                    <mxGeometry y="20" width="180" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="📂Project/States/Decoration.states" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="105" y="130" width="240" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=5;fontFamily=Courier New;fontSize=18;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="520" as="sourcePoint"/>
+                        <mxPoint x="800" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="146" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;OK! So this state script creates a decoration with four frames, Three states:&lt;font face=&quot;Courier New&quot;&gt;IDLE&lt;/font&gt;,&lt;font face=&quot;Courier New&quot;&gt;DEATH&lt;/font&gt;, and &lt;font face=&quot;Courier New&quot;&gt;DEAD&lt;/font&gt;.&amp;nbsp;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=30;position=0.06;position2=0;" vertex="1" parent="1">
+                    <mxGeometry x="415" y="1950" width="310" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="147" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="2020" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAHlBMVEUAAAAAAAB2QkW2YW7Tgn3Thn7pmY71raf1wLr////Y9Bk9AAAAAXRSTlMAQObYZgAAAQNJREFUeAG10lHO2zAMA+DRZCjf/8S/JMeF6wHby8YAaQp+kY26v/5rgL/05O8CO/08bgFQrohF4PgWkGPHSUTGCbDrmYkQyOEDII5+iUHhXJ+SD2B+9cwi3GTGAuanB7xeU8wlImPh6qdVt3hj462leAe4VRHH3CMguuusFpMz9eQFgHddliG77wmBV4yI4fDIUN1Ls0QCvAegqvr1Kiz1R4HeV6XX76J/A+ddBSbz6jVblIt0Q7bQoK4NokBEDIKy1qF/wBreYzAA9RZS7D20sJy3BxmbOM8xI47Bx37cQMdZnXmeh8jM6+/GDai1OXyDWN/37CunB8QLXLkW/9Owf5MfF+0LTJktf40AAAAASUVORK5CYII=;" vertex="1" parent="1">
+                    <mxGeometry x="364" y="2024" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;That's right!&lt;br&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=40;position=0.81;position2=1;base=21;align=left;arcSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="415" y="2110" width="312" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="737" y="2210" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABFFBMVEUAAAAAAAAYCQAsGQAxDgA0NDQ3HgA6IgA8GgA9HQA/JQBDIwBEJABHNQdPMwBUOwBWPwBWQQBcRABcRBNcSQBeTQBgRwBhUAtiTwBiUABjUABkUwBkVQBlUgBmZmZoUhtvYDBwYh10aTV1Yy91aDt6azF8bzJ9bTN9cDN+cDl+cEN+cTqCdUWEdUCFeECGekeHeUaNgk+Ng02PhFKRg0+ShFCWi1iXiVeajlqcj12ck2Kell+glmShl2OhmGSlnGenoWypn22po3Gso3Gso3OupHeup3Wxqnixq3qyq3myrHu1rX21rn+3r4W3soW8t4vBvI/Dv5PFwZXHwprLx5vNy6PT0Kvf2rbi3brv6s7299v////yZfJsAAAAAXRSTlMAQObYZgAAAVJJREFUeNrNkNlSwkAQRWkTxBhsNAaNZkTbDRTiOoA6rrgBSoIGFOX//8OJWAUklfLN8ryeU3eWxP8B4Bfv+jKB+AxEQQh0/R7EBQXhu6KAblywKPznnosFAXEn9JvvLbkRcws48OBD9Ft+jVtcNlEvup+9DnRbwuKXD1WCaJBLvnld71pw6/S1cREtRDLndbz7o5LFzx/bVwKjRU1SKSEXvHlS5xS9xmqlUlrA7fKNXa7LikHIG6Sl08T39l8y61wuOPMwHqxUt9BgxA5vU7YdLGyEJ86elhTMFNubKXRILhggGQ3W7nYUjURxEh07KJZJNPTRBHaPp2c4KWjbeXKIGUgUKuZAJUVBNFmemDkFANgYPyUBqqJpJprIZvUJkHAIvQVRVTCLDHUI0HnIEydQ1aCAb7gOY55LL0HKDp6oU/gvJD87gYGhj+wMzNBHd/6YL244MEYzbemVAAAAAElFTkSuQmCC;" vertex="1" parent="1">
+                    <mxGeometry x="741" y="2214" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Alright, but how does the state machine know how to go to the &lt;font face=&quot;Courier New&quot;&gt;DEATH&lt;/font&gt; state if the &lt;font face=&quot;Courier New&quot;&gt;IDLE&lt;/font&gt; state loops indefinitely?&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=30;position=0.06;position2=0;" vertex="1" parent="1">
+                    <mxGeometry x="415" y="2250" width="310" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="154" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="2320" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAHlBMVEUAAAAAAAB2QkW2YW7Tgn3Thn7pmY71raf1wLr////Y9Bk9AAAAAXRSTlMAQObYZgAAAQNJREFUeAG10lHO2zAMA+DRZCjf/8S/JMeF6wHby8YAaQp+kY26v/5rgL/05O8CO/08bgFQrohF4PgWkGPHSUTGCbDrmYkQyOEDII5+iUHhXJ+SD2B+9cwi3GTGAuanB7xeU8wlImPh6qdVt3hj462leAe4VRHH3CMguuusFpMz9eQFgHddliG77wmBV4yI4fDIUN1Ls0QCvAegqvr1Kiz1R4HeV6XX76J/A+ddBSbz6jVblIt0Q7bQoK4NokBEDIKy1qF/wBreYzAA9RZS7D20sJy3BxmbOM8xI47Bx37cQMdZnXmeh8jM6+/GDai1OXyDWN/37CunB8QLXLkW/9Owf5MfF+0LTJktf40AAAAASUVORK5CYII=;" vertex="1" parent="1">
+                    <mxGeometry x="364" y="2324" width="32" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="156" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Great question! The EFPSE checks continuously&amp;nbsp; If the decoration is above 0HP. If at any point falls below this 1hp, it will transition into the DEATH state and then, commonly in practice, transitions to the DEAD state.&lt;br&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;rounded=1;shadow=1;size=40;position=0.81;position2=1;base=21;align=left;arcSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="415" y="2410" width="312" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;shadow=1;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="737" y="2610" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="158" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABFFBMVEUAAAAAAAAYCQAsGQAxDgA0NDQ3HgA6IgA8GgA9HQA/JQBDIwBEJABHNQdPMwBUOwBWPwBWQQBcRABcRBNcSQBeTQBgRwBhUAtiTwBiUABjUABkUwBkVQBlUgBmZmZoUhtvYDBwYh10aTV1Yy91aDt6azF8bzJ9bTN9cDN+cDl+cEN+cTqCdUWEdUCFeECGekeHeUaNgk+Ng02PhFKRg0+ShFCWi1iXiVeajlqcj12ck2Kell+glmShl2OhmGSlnGenoWypn22po3Gso3Gso3OupHeup3Wxqnixq3qyq3myrHu1rX21rn+3r4W3soW8t4vBvI/Dv5PFwZXHwprLx5vNy6PT0Kvf2rbi3brv6s7299v////yZfJsAAAAAXRSTlMAQObYZgAAAVJJREFUeNrNkNlSwkAQRWkTxBhsNAaNZkTbDRTiOoA6rrgBSoIGFOX//8OJWAUklfLN8ryeU3eWxP8B4Bfv+jKB+AxEQQh0/R7EBQXhu6KAblywKPznnosFAXEn9JvvLbkRcws48OBD9Ft+jVtcNlEvup+9DnRbwuKXD1WCaJBLvnld71pw6/S1cREtRDLndbz7o5LFzx/bVwKjRU1SKSEXvHlS5xS9xmqlUlrA7fKNXa7LikHIG6Sl08T39l8y61wuOPMwHqxUt9BgxA5vU7YdLGyEJ86elhTMFNubKXRILhggGQ3W7nYUjURxEh07KJZJNPTRBHaPp2c4KWjbeXKIGUgUKuZAJUVBNFmemDkFANgYPyUBqqJpJprIZvUJkHAIvQVRVTCLDHUI0HnIEydQ1aCAb7gOY55LL0HKDp6oU/gvJD87gYGhj+wMzNBHd/6YL244MEYzbemVAAAAAElFTkSuQmCC;" vertex="1" parent="1">
+                    <mxGeometry x="741" y="2614" width="32" height="32" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
