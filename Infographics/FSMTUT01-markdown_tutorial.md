@@ -1,30 +1,30 @@
-# EFPSE Finite State Machine tutorial {#efpse-finite-state-machine-tutorial}
+# EFPSE Finite State Machine tutorial
 
 This is the first tutorial of the EFPSE Finite State Machine.
 
-## Intro {#intro}
+## Intro
 
-### Who is this document for? {#who-is-this-document-for}
+### Who is this document for?
 
 Users of EFPSE that are Somewhat familiar with the software. IE: You should know how to navigate efpse, Add textures, Create new maps and do simple tasks.
 
-### What are the assumptions? {#what-are-the-assumptions}
+### What are the assumptions?
 
 I assume you know what a computer is and that's pretty much it.
 
-### who is the author? {#who-is-the-author}
+### who is the author?
 
 me
 
-### Structure of document {#structure-of-document}
+### Structure of document
 
 First half lecture blah blah
 
 Second half implementation and application of blah blah
 
-## First half (lecture blah blah) {#first-half-lecture-blah-blah}
+## First half (lecture blah blah)
 
-### What is a finite state machine? {#what-is-a-finite-state-machine}
+### What is a finite state machine?
 
 > A state machine \[🤖\] reads a set of \[⏰:🕓\] inputs and changes to a different state\[🚦:🟥,🟨,🟩\] based on those inputs.
 
@@ -40,7 +40,7 @@ Really all we need is a pencil and paper but since this is a computer I'll make 
 
 So we draw two circles that represent two different `states` and we draw an arrow between them to represent the `input` . The text over the arrow that reads `Go to STATE B`, that's our `input` or our `action`. If we give that `input` or `action` to our machine, then our state machine will transition into `STATE B`.
 
-### Huh? Break it down for me {#huh-break-it-down-for-me}
+### Huh? Break it down for me
 
 It can be kind of hard to see what's going on in a diagram like this so let's break it down into three steps.
 
@@ -58,7 +58,7 @@ And upon receiving this signal the machine will change the `STATE B` and that's 
 
 OK admittedly that was kind of abstract, so let's look at some real world examples that we've already interacted with.
 
-### Everyday examples {#everyday-examples}
+### Everyday examples
 
 That's right, you've interacted with state machines plenty of time and probably even multiple times today!
 
@@ -68,11 +68,11 @@ That's right, you've interacted with state machines plenty of time and probably 
 
 ### A closer look (👀)
 
-#### At light switches: {#at-light-switches}
+#### At light switches:
 
 ![](lightswitchfsm.svg){width="350"}
 
-#### At traffic lights: {#at-traffic-lights}
+#### At traffic lights:
 
 ![https://medium.com/well-red/state-machines-for-everyone-part-1-introduction-b7ac9aaf482e](traffic.png){fig-alt="Traffic light diagram explaining how as the timer expires the traffic light transitions from green to amber to red and emback the green" fig-align="left"}
 
@@ -82,13 +82,13 @@ That's right, you've interacted with state machines plenty of time and probably 
 
 [Traffic light state machine simulation using stately](https://stately.ai/registry/editor/f7a50bc1-d70b-4133-823c-4f7370e0ea70?mode=Design&machineId=8757d2cb-9c54-48be-a3f9-651bcd921054)
 
-#### Brushing Teeth {#brushing-teeth}
+#### Brushing Teeth
 
 ![](brushteethfsm.svg){width="500"}
 
 ### How do you create a state machine (In EFPSE 1.10.4)?
 
-#### Overview {#overview}
+#### Overview
 
 📂Project/States/Decoration.states
 
@@ -111,17 +111,17 @@ frame 4 0.25 0 0 0 NONE
 
 ![](02_2_FSM_HOW_EFPSE_diagram.svg){width="650"}
 
-#### Syntax {#syntax}
+#### Syntax
 
 Let's break this down by taking a look at each line and identify what's going on.
 
-##### Resource declarations {#resource-declarations}
+##### Resource declarations
 
 `image Decoration 0 4`
 
 All resource declarations need to be done at The top of the file. This can include `image`s using the `image` keyword or `sound`s using the `sound` keyword (Which will be covered later). 
 
-##### State declarations {#state-declarations}
+##### State declarations
 
 `state IDLE NONE 0`
 
@@ -129,7 +129,7 @@ Each `state` definition is preceded by the keyword `state` then followed by th
 
 ~That is correct you can use 3D models but we will not be covering that in this tutorial.~
 
-##### Frame declarations {#frame-declarations}
+##### Frame declarations
 
 ``` state
 state IDLE NONE 0
@@ -172,27 +172,4 @@ Let's take an even closer look at one of these `frame` declarations.
 
 [fsm](f7a50bc1-d70b-4133-823c-4f7370e0ea70?machineId=94fa47ad-0e4b-461c-8865-4e04f15a520d&mode=design)
 
-## Second half (implementation and application of blah blah) {#second-half-implementation-and-application-of-blah-blah}
-
-- [EFPSE Finite State Machine tutorial {#efpse-finite-state-machine-tutorial}](#efpse-finite-state-machine-tutorial-efpse-finite-state-machine-tutorial)
-  - [Intro {#intro}](#intro-intro)
-    - [Who is this document for? {#who-is-this-document-for}](#who-is-this-document-for-who-is-this-document-for)
-    - [What are the assumptions? {#what-are-the-assumptions}](#what-are-the-assumptions-what-are-the-assumptions)
-    - [who is the author? {#who-is-the-author}](#who-is-the-author-who-is-the-author)
-    - [Structure of document {#structure-of-document}](#structure-of-document-structure-of-document)
-  - [First half (lecture blah blah) {#first-half-lecture-blah-blah}](#first-half-lecture-blah-blah-first-half-lecture-blah-blah)
-    - [What is a finite state machine? {#what-is-a-finite-state-machine}](#what-is-a-finite-state-machine-what-is-a-finite-state-machine)
-    - [Huh? Break it down for me {#huh-break-it-down-for-me}](#huh-break-it-down-for-me-huh-break-it-down-for-me)
-      - [](#)
-    - [Everyday examples {#everyday-examples}](#everyday-examples-everyday-examples)
-    - [A closer look (👀)](#a-closer-look-)
-      - [At light switches: {#at-light-switches}](#at-light-switches-at-light-switches)
-      - [At traffic lights: {#at-traffic-lights}](#at-traffic-lights-at-traffic-lights)
-      - [Brushing Teeth {#brushing-teeth}](#brushing-teeth-brushing-teeth)
-    - [How do you create a state machine (In EFPSE 1.10.4)?](#how-do-you-create-a-state-machine-in-efpse-1104)
-      - [Overview {#overview}](#overview-overview)
-      - [Syntax {#syntax}](#syntax-syntax)
-        - [Resource declarations {#resource-declarations}](#resource-declarations-resource-declarations)
-        - [State declarations {#state-declarations}](#state-declarations-state-declarations)
-        - [Frame declarations {#frame-declarations}](#frame-declarations-frame-declarations)
-  - [Second half (implementation and application of blah blah) {#second-half-implementation-and-application-of-blah-blah}](#second-half-implementation-and-application-of-blah-blah-second-half-implementation-and-application-of-blah-blah)
+## Second half (implementation and application of blah blah) 
