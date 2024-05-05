@@ -1,13 +1,13 @@
 <mxfile host="65bd71144e">
     <diagram id="GAWc1gAhpG-Zxj6IqSYM" name="Page-1">
-        <mxGraphModel dx="622" dy="368" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="659" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="63" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#00CCCC;" vertex="1" parent="1">
+                <mxCell id="63" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#00CCCC;" parent="1" vertex="1">
                     <mxGeometry x="400" y="280" width="430" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="62" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00CC66;strokeWidth=2;" vertex="1" parent="1">
+                <mxCell id="62" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00CC66;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="400" y="170" width="430" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;How do a finite state machine?&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -64,13 +64,13 @@
                 <mxCell id="36" value="image Decoration 0 4&#10;&#10;&#10;state IDLE NONE 0&#10;frame 0 0.25 0 0 0 NONE&#10;frame 0 0.25 0 0 0 READY&#10;&#10;&#10;state DEATH DEAD 0&#10;frame 1 0.166 0 0 0 NONE&#10;frame 2 0.166 0 0 0 NONE&#10;frame 3 0.166 0 0 0 NONE&#10;&#10;&#10;state DEAD NONE 0&#10;frame 4 0.25 0 0 0 NONE&#10;frame 4 0.25 0 0 0 NONE" style="text;whiteSpace=wrap;html=1;rounded=0;" parent="33" vertex="1">
                     <mxGeometry y="20" width="180" height="270" as="geometry"/>
                 </mxCell>
-                <mxCell id="60" value="" style="endArrow=none;html=1;strokeWidth=3;fillColor=#0050ef;strokeColor=#00CCCC;" edge="1" parent="33">
+                <mxCell id="60" value="" style="endArrow=none;html=1;strokeWidth=3;fillColor=#0050ef;strokeColor=#00CCCC;" parent="33" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint y="83" as="sourcePoint"/>
                         <mxPoint x="109" y="83" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="61" value="" style="endArrow=classic;html=1;fillColor=#0050ef;strokeColor=#00CCCC;strokeWidth=3;" edge="1" parent="33">
+                <mxCell id="61" value="" style="endArrow=classic;html=1;fillColor=#0050ef;strokeColor=#00CCCC;strokeWidth=3;" parent="33" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="114" y="77" as="sourcePoint"/>
                         <mxPoint x="223" y="140" as="targetPoint"/>
@@ -85,39 +85,39 @@
                 <mxCell id="43" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;In EFPSE&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;rotation=-15;" parent="1" vertex="1">
                     <mxGeometry x="674" y="17" width="129" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;SYNTAX&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="45" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;SYNTAX&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="431" y="124" width="75" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" value="" style="endArrow=none;html=1;fontSize=18;rounded=0;" edge="1" parent="1">
+                <mxCell id="46" value="" style="endArrow=none;html=1;fontSize=18;rounded=0;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="400" y="160" as="sourcePoint"/>
                         <mxPoint x="827.5" y="160" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="47" value="&lt;p style=&quot;line-height: 130%;&quot;&gt;All resource declarations need to be done at The top of the file. This can include images using the&amp;nbsp;&lt;font style=&quot;background-color: rgb(51, 51, 51);&quot; face=&quot;Courier New&quot;&gt;image&lt;/font&gt; keyword or sounds using the &lt;span style=&quot;background-color: rgb(51, 51, 51);&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;sound&lt;/font&gt;&lt;/span&gt; keyword.&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;line-height: 130%;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 130%;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="47" value="&lt;p style=&quot;line-height: 130%;&quot;&gt;All resource declarations need to be done at The top of the file. This can include images using the&amp;nbsp;&lt;font style=&quot;background-color: rgb(51, 51, 51);&quot; face=&quot;Courier New&quot;&gt;image&lt;/font&gt; keyword or sounds using the &lt;span style=&quot;background-color: rgb(51, 51, 51);&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;sound&lt;/font&gt;&lt;/span&gt; keyword.&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;line-height: 130%;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 130%;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="408" y="220" width="427" height="86" as="geometry"/>
                 </mxCell>
                 <UserObject label="&lt;font style=&quot;font-size: 11px;&quot;&gt;https://pixelwolf.net/efpse/wiki/index.php?title=FSM&lt;/font&gt;" link="https://pixelwolf.net/efpse/wiki/index.php?title=FSM" id="48">
-                    <mxCell style="text;whiteSpace=wrap;html=1;fontSize=36;rounded=0;" vertex="1" parent="1">
+                    <mxCell style="text;whiteSpace=wrap;html=1;fontSize=36;rounded=0;" parent="1" vertex="1">
                         <mxGeometry x="120" y="440" width="260" height="60" as="geometry"/>
                     </mxCell>
                 </UserObject>
-                <mxCell id="49" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;High level overview&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+                <mxCell id="49" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;High level overview&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="1" vertex="1">
                     <mxGeometry x="618" y="134" width="217" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="50" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;3D models in 3DM format can be used but we will not be discussing them in this tutorial&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=24;" vertex="1" parent="1">
+                <mxCell id="50" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;3D models in 3DM format can be used but we will not be discussing them in this tutorial&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=24;" parent="1" vertex="1">
                     <mxGeometry x="393" y="430" width="447" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="&lt;p style=&quot;line-height: 130%;&quot;&gt;Each state definition is preceded by the keyword &lt;span style=&quot;background-color: rgb(51, 51, 51);&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;state&lt;/font&gt;&lt;/span&gt; then followed by the name of the state you would like to define followed by the name of the state he would like to come after The defined state. The end of this line it needs a zero and this is an interpolation flag for 3D models&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="51" value="&lt;p style=&quot;line-height: 130%;&quot;&gt;Each state definition is preceded by the keyword &lt;span style=&quot;background-color: rgb(51, 51, 51);&quot;&gt;&lt;font face=&quot;Courier New&quot;&gt;state&lt;/font&gt;&lt;/span&gt; then followed by the name of the state you would like to define followed by the name of the state he would like to come after The defined state. The end of this line it needs a zero and this is an interpolation flag for 3D models&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="408" y="290" width="410" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="57" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.13;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#60a917;strokeColor=#00CC66;strokeWidth=3;" edge="1" parent="1">
+                <mxCell id="57" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.13;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#60a917;strokeColor=#00CC66;strokeWidth=3;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="301" y="184" as="sourcePoint"/>
                         <mxPoint x="399.9999999999999" y="199.88" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="59" value="" style="endArrow=none;html=1;strokeWidth=3;fillColor=#60a917;strokeColor=#00CC66;" edge="1" parent="1">
+                <mxCell id="59" value="" style="endArrow=none;html=1;strokeWidth=3;fillColor=#60a917;strokeColor=#00CC66;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="185" y="190" as="sourcePoint"/>
                         <mxPoint x="294" y="190" as="targetPoint"/>
