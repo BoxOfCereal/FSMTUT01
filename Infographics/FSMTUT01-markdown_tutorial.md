@@ -1,12 +1,13 @@
-# EFPSE Finite State Machine tutorial
+# EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-1px"> Finite State Machine tutorial
 
-This is the first tutorial of the EFPSE Finite State Machine.
+Welcome to the first tutorial of the EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px"> finite state machine. Real quick: This document is for users of EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px"> who can Easily do basic engine tasks and want to see what state machines are about. The first half is theory skip this if you know what a state machine is, and then start at How do you create a state machine in EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">.
 
+Otherwise keep reading and enjoy the rest of the tutorial.:)
 ## Intro
 
 ### Who is this document for?
 
-Users of EFPSE that are Somewhat familiar with the software. IE: You should know how to navigate efpse, Add textures, Create new maps and do simple tasks.
+Users of EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px"> that are Somewhat familiar with the software. IE: You should know how to navigate EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">, Add textures, Create new maps and do simple tasks.
 
 ### What are the assumptions?
 
@@ -25,8 +26,9 @@ Second half implementation and application of blah blah
 ## First half (lecture blah blah)
 
 ### What is a finite state machine?
+Let's first start by answering this question
 
-> A state machine \[🤖\] reads a set of \[⏰:🕓\] inputs and changes to a different state\[🚦:🟥,🟨,🟩\] based on those inputs.
+> A state machine [🤖] reads a set of [⏰:🕓] inputs and changes to a different state[🚦:🟥,🟨,🟩] based on those inputs.
 
 ~[and an even more technical definition Is available here](https://developer.mozilla.org/en-US/docs/Glossary/State_machine)🤓~
 
@@ -70,34 +72,70 @@ That's right, you've interacted with state machines plenty of time and probably 
 
 #### At light switches:
 
-<video width="426" height="240" controls>
-  <source src="lightswitch.mp4" type="video/mp4">
-</video>
-Video by Kapaw from Pexels
 
-https://www.pexels.com/video/a-big-lightbulb-turning-on-4735258/
+
 
 ![](lightswitchfsm.svg){width="350"}
 
 A light switch is a perfect example of a state machine. Two states off and on. The signal is the light switch. Only send the on signal when the switch is off and you can only send the off signal when the switch is on. This simple state machine has two states and has two actions. Nothing unknown can happen you could say it's very...finite.
+<video width="426" height="240" controls>
+  <source src="lightswitch.mp4" type="video/mp4">
+</video>
+Video by Kapaw from Pexels 
+
+<a href="https://www.pexels.com/video/a-big-lightbulb-turning-on-4735258/">Link to video source</a>
+
 
 #### At traffic lights:
 
 ![https://medium.com/well-red/state-machines-for-everyone-part-1-introduction-b7ac9aaf482e](traffic.png){fig-alt="Traffic light diagram explaining how as the timer expires the traffic light transitions from green to amber to red and emback the green" fig-align="left"}
 
-<iframe src="https://stately.ai/registry/editor/embed/f7a50bc1-d70b-4133-823c-4f7370e0ea70?machineId=59c79808-2046-49e6-8124-347988a3fda6" width="80%" height="400px" frameborder="0">
+Traffic lights are another perfect example of state machines that we interact with every day. Instead of two states like the light switch there's three. And instead of a switch you use with your finger, The traffic lights Use timers pressure sensors and other signals to determine when to switch to the next state.
 
+##### Traffic lights simulation (🚦:🟥,🟨,🟩)
+Let's take a look at a simulation below(Because I made it 🤓). If you click on <span style="background-color:#2E2F3C !important;color:white;padding:12px;padding-left:10px;padding-right:16px; border-radius: 3px;">▶️  Simulate</span>
+**in the bottom right of the embedded window**, You will enter into simulation mode. From here you can click on <span style="background-color:#2949A5 !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 14px;">20s</span> to simulate 20 seconds going off and moving to the next state: <span style="background-color:#4D4F5F !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 3px;">RED</span>, <span style="background-color:#4D4F5F !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 3px;">GREEN</span>, or <span style="background-color:#4D4F5F !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 3px;">YELLOW</span>
+.
+<iframe src="https://stately.ai/registry/editor/embed/f7a50bc1-d70b-4133-823c-4f7370e0ea70?machineId=8757d2cb-9c54-48be-a3f9-651bcd921054" width="90%" height="400px" frameborder="0">
+https://stately.ai/registry/editor/&mode=design
 </iframe>
 
-[Traffic light state machine simulation using stately](https://stately.ai/registry/editor/f7a50bc1-d70b-4133-823c-4f7370e0ea70?mode=Design&machineId=8757d2cb-9c54-48be-a3f9-651bcd921054)
+<span style="color:grey">NOTE: The embedded window behaves kind of funny with the scroll wheel so if you end up losing the traffic light state machine you can use the middle click to drag the content back into center. Sorry.😅</span>
 
-#### Brushing Teeth
+
+
+#### Brushing Teeth <span style="color:grey">... (🤔)?</span>
 
 ![](brushteethfsm.svg){width="500"}
 
+Yes even brushing your teeth can be conceptualized as a state machine!
+
+Why anyone would do that <span style="color:grey">(For the tutorial! 🤓)</span> is any other one's guess but the point is that **_Finite state machines_ don't have to just be _mechanical_ or _electronic_ things**. **As long as you have a set of** <span style="background-color:#4D4F5F !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 3px;">STATES</span> **and a set of** <span style="background-color:#2949A5 !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 14px;">inputs</span>**(signals) that are known, _you can conceptualize these states and inputs as a state machine_.**
+
+That's the intrinsic power of the state machine. You can boil down sophisticated decision making Processes or Respond to specific events in consistent reliable ways using logic.
+
+So as you continue with this tutorial <span style="color:grey">(And after 🙏)</span> try to think about everyday objects That could be broken down into a series of <span style="background-color:#4D4F5F !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 3px;">STATES</span> and <span style="background-color:#2949A5 !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 14px;">inputs</span>.
+
+### Summary of part one <span style="color:grey">(condensed blah blah )</span>
+In summary state machines are conceptual tools used to model Systems. These systems are comprised of known states and known actions Actions and inputs. The systems can only ever be in the predefined states it can only ever take predefined actions and respond to predefined signals.
+
+That is a lot of boring text thanks for bearing with all the prerequisite stuff now we can start using what we know to make state machines inside EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">!
+
 ### How do you create a state machine (In EFPSE 1.10.4)?
+OK finally we're here! Let's make a state machine in EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">! 
+
+But how do we do that? Thankfully the [wiki](https://pixelwolf.net/efpse/wiki/index.php?title=Main_Page)  has an example of a [simple state machine for a decoration](https://pixelwolf.net/efpse/wiki/index.php?title=FSM#Basic_FSM_for_decorations:). So we'll build an example based off that with some of my own twists! And we'll do it step by step and analyze every single component starting with how to describe our state machine in EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">.
+
+
+
+
 
 #### Overview
+EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px"> State machines are described declaratively in a script-like language saved in a text file with the ext `.states`. These state scripts should be located in the 📂Project/States folder.
+
+
+##### EXAMPLE
+Let's take a look at the example script:
 
 📂Project/States/Decoration.states
 
@@ -118,7 +156,7 @@ frame 4 0.25 0 0 0 NONE
 frame 4 0.25 0 0 0 NONE
 ```
 
-![](02_2_FSM_HOW_EFPSE_diagram.svg){width="650"}
+
 
 #### Syntax
 
@@ -150,24 +188,134 @@ Each line of the `state` begins with the keyword `frame` followed by the frame n
 
 Let's take an even closer look at one of these `frame` declarations.
 
-| **Frame keyword** | **Frame index** | **Duration on screen** | **XYZ offsets (only for weapons)** | **Action to take** |
-|---------------|---------------|---------------|---------------|---------------|
-| `frame`           | `0`             | `0.25`                 | `0 0 0`                            | `READY`            |
+| <span style="background-color: rgb(102, 102, 102);">**Frame keyword**</span> | <span style="background-color: aqua;">**Frame index**</span> | <span style="background-color:orange;">**Duration on screen**</span> | <span style="background-color:salmon;">**XYZ offsets (only for weapons)**</span> | <span style="background-color:yellowgreen;">**Action to take**</span> |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `frame`                                                                      | `0`                                                          | `0.25`                                                               | `0 0 0`                                                                          | `READY`                                                               |
 
-[Frame keyword]{style="color: blue; font-weight: bold;"} - Frame keyword used on every line of a frame in a state's definition
+<span style="background-color: rgb(102, 102, 102);">**Frame keyword**</span> - Frame keyword used on every line of a frame in a state's definition
 
-[Frame index]{style="color: red; font-weight: bold;"} - The index of the list of images that have been loaded to display
+<span style="background-color: aqua;">**Frame index**</span> - The index of the list of images that have been loaded to display
 
-[Duration on screen]{style="color: green; font-weight: bold;"} This is the length in seconds of how long to display the image for
+<span style="background-color:orange;">**Duration on screen**</span> - Duration on screen This is the length in seconds of how long to display the image for
 
-[XYZ offsets (only for weapons)]{style="color: orange; font-weight: bold;"} - This is an XYZ offset used for weapons, Allows for on screen position adjustment
+<span style="background-color:salmon;">**XYZ offsets (only for weapons)**</span> - This is an XYZ offset used for weapons, Allows for on screen position adjustment
 
-[Action to take]{style="color: purple; font-weight: bold;"} - The action to perform on this frame. Default is none and will make the frame loop.\*\*
+<span style="background-color:yellowgreen;">**Action to take**</span> - The action to perform on this frame. Default is none and will make the frame loop.\*\*
 
 > \*\*Here we're Performing the ready action. This action is only necessary to be called before a weapon or enemy can attack. In this case we're using only a decoration and the decoration entity does not support the attack state so essentially this does nothing
 
-[fsm](f7a50bc1-d70b-4133-823c-4f7370e0ea70?machineId=94fa47ad-0e4b-461c-8865-4e04f15a520d&mode=design)
+#### Whoa that's a lot! 😱
+Absolutely! No worries if it doesn't sink in the first time. Let's back It way back up. Let's look at the original code but let's remove all those messy frame declarations and let's just look at the state declaration syntax:
+
+
+📂Project/States/Decoration.states
+<span  style="color:grey;">`frame` declarations omitted</span>
+
+``` states
+image Decoration 0 4
+
+state IDLE NONE 0
+
+state DEATH DEAD 0
+
+state DEAD NONE 0
+```
+Now let's compare that to a diagram of what's going on;
+
+🤖`Decoration` state machine diagram
+![](02_2_FSM_HOW_EFPSE_diagram.svg){width="650"}
+
+As we can see both the script and the diagram have three states which are idle death and dead, But what's not included in the script is a <span style="color: transparent; background-image: linear-gradient(to right, black, #f0f0f0); -webkit-background-clip: text; background-clip: text; text-fill-color: transparent;">hidden signal...🥷</span>
+
+In EFPSE Things that have HP like breakable decorations enemies in the player are hard coded to do certain things and one of them is to always check if their hp is above 0. 
+
+If this happens the state machine stops what it's doing immediately and it goes to the death state.
+>This happens no matter what state the entity is in. This includes any custom states that you have defined as well. 
+
+From here we can control what it does but most commonly we transition to the dead state which is. Nothing happens.
+
+
+##### back 2 a bit deeper
+Now let's dive back in just a little bit deeper and look at the simulation that I have prepared. It works just like the stoplight simulation but this time I've made it so that it mirrors our decoration state machine.
+<iframe src="https://stately.ai/registry/editor/embed/f7a50bc1-d70b-4133-823c-4f7370e0ea70?machineId=94fa47ad-0e4b-461c-8865-4e04f15a520d" width="90%" height="400px" frameborder="0">
+https://stately.ai/registry/editor/&mode=design
+</iframe>
+
+It might be a little bit hard to see this time around because when the if statement is true it looks like nothing happens. You can click on the view in Stately studio button and run the simulation there and you'll get more feedback or if you're lazy I put a video below that shows me doing that so you don't have to do it yourself. 🙏
+
+<video controls width="720">
+  <source src="DecorationSim.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 #### Translating it into English
+If you're still I'm not sure exactly what's going on in the Script or you enjoy things being talked about until they're no longer interesting, let's translate the script into English below. Otherwise, feel free to skip this and move on directly to the implementation.
 
+
+<div style="font-family: Arial, sans-serif; background-color: #f2f2f2; color: #333; margin: 0; padding: 0;">
+    <div class="chat-container" style="max-width: 100%; margin: 20px auto; border-radius: 8px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <ul class="chat" style="list-style: none; margin: 0; padding: 0;">
+            <li class="bot-message" style="padding: 8px 16px; border-bottom: 1px solid #ccc;">
+                <span class="sender-name" style="font-weight: bold; color: #555;">🤖EFPSE GPT:</span>
+                <p class="message" style="margin-top: 4px; font-size: 16px;">Hello, how can I help you?</p>
+            </li>
+            <li class="user-message" style="padding: 8px 16px; border-bottom: 1px solid #ccc;">
+                <span class="sender-name" style="font-weight: bold; color: #555;">🐖Cleverhog:</span>
+                <p class="message" style="margin-top: 4px; font-size: 16px;"><code>image Decoration 0 4</code>
+                 <p>What does this line say?</p>
+                </p>
+            </li>
+            <li class="bot-message" style="padding: 8px 16px; border-bottom: 1px solid #ccc;">
+                <span class="sender-name" style="font-weight: bold; color: #555;">🤖EFPSE GPT:</span>
+                <p class="message" style="margin-top: 4px; font-size: 16px;">This script says to load an <code>image</code> called <code>Decoration</code> frames <code>0</code> through <code>4</code>.</p>
+            </li>
+            <li class="user-message" style="padding: 8px 16px; border-bottom: 1px solid #ccc;">
+                <span class="sender-name" style="font-weight: bold; color: #555;">🐖Cleverhog:</span>
+                <p class="message" style="margin-top: 4px; font-size: 16px;">
+                <code>state IDLE NONE 0<br>
+                    frame 0 0.25 0 0 0 NONE<br>
+                    frame 0 0.25 0 0 0 READY</code> 
+                    <br>
+                    <p>-</p>
+                    <p>What does this line say? </p>
+                    </p>
+            </li>
+            <li class="bot-message" style="padding: 8px 16px; border-bottom: 1px solid #ccc;">
+                <span class="sender-name" style="font-weight: bold; color: #555;">🤖EFPSE GPT:</span>
+                <p class="message" style="margin-top: 4px; font-size: 16px;">Make a state called <code>IDLE</code> that repeats with two <code>frame</code>s where they're both the <code>0th</code> image from the <code>Decoration</code> <code>image</code> list and they both last <code>0.25</code> seconds; set the last <code>frame</code>'s action to be <code>READY</code>. Because <code>NONE</code> is set as the <em>transition state</em>, loop <u>indefinitely</u>♾️</p>
+            </li>
+            <li class="user-message" style="padding: 8px 16px; border-bottom: 1px solid #ccc;">
+                <span class="sender-name" style="font-weight: bold; color: #555;">🐖Cleverhog:</span>
+                <p class="message" style="margin-top: 4px; font-size: 16px;">
+                <code>
+                    <br>
+                    state DEATH DEAD 0<br  >
+                    frame 1 0.166 0 0 0 NONE<br>
+                    frame 2 0.166 0 0 0 NONE<br>
+                    frame 3 0.166 0 0 0 NONE<br>
+                </code>
+                <p>What about all this garbage?</p>
+                </p>
+            </li>
+            <li class="bot-message" style="padding: 8px 16px; border-bottom: 1px solid #ccc;">
+                <span class="sender-name" style="font-weight: bold; color: #555;">🤖EFPSE GPT:</span>
+                <p class="message" style="margin-top: 4px; font-size: 16px;">
+                Make a state called DEATH that transitions into the DEAD state. Make the state have three frames starting at 1 ending at 3, and make each of them last for  .166 seconds. Do not invoke any actions in this state.
+                </p>
+            </li>
+            <!-- Add more messages here -->
+        </ul>
+    </div>
+    <div style="width: 100%; padding: 16px; background-color: #fff; border-top: 1px solid #ccc;">
+        <input type="text" style="width: calc(100% - 32px); padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" placeholder="Type your message here...(This doesn't actually work 😅)">
+    </div>
+</div>
+
+
+
+
+
+
+#### Say it in English!!!
 ## Second half (implementation and application of blah blah)
