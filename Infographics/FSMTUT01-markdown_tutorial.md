@@ -70,7 +70,16 @@ That's right, you've interacted with state machines plenty of time and probably 
 
 #### At light switches:
 
+<video width="426" height="240" controls>
+  <source src="lightswitch.mp4" type="video/mp4">
+</video>
+Video by Kapaw from Pexels
+
+https://www.pexels.com/video/a-big-lightbulb-turning-on-4735258/
+
 ![](lightswitchfsm.svg){width="350"}
+
+A light switch is a perfect example of a state machine. Two states off and on. The signal is the light switch. Only send the on signal when the switch is off and you can only send the off signal when the switch is on. This simple state machine has two states and has two actions. Nothing unknown can happen you could say it's very...finite.
 
 #### At traffic lights:
 
@@ -141,35 +150,24 @@ Each line of the `state` begins with the keyword `frame` followed by the frame n
 
 Let's take an even closer look at one of these `frame` declarations.
 
-<table>
-  <tr>
-    <th><span style="color: blue; font-weight: bold;">Frame keyword</span></th>
-    <th><span style="color: red; font-weight: bold;">Frame index</span></th>
-    <th><span style="color: green; font-weight: bold;">Duration on screen</span></th>
-    <th><span style="color: orange; font-weight: bold;">XYZ offsets (only for weapons)</span></th>
-    <th><span style="color: purple; font-weight: bold;">Action to take</span></th>
-  </tr>
-  <tr>
-    <td><code>frame</code></td>
-    <td><code>0    </code></td>
-    <td><code>0.25 </code></td>
-    <td><code>0 0 0</code></td>
-    <td><code>READY</code></td>
-  </tr>
-</table>
+| **Frame keyword** | **Frame index** | **Duration on screen** | **XYZ offsets (only for weapons)** | **Action to take** |
+|---------------|---------------|---------------|---------------|---------------|
+| `frame`           | `0`             | `0.25`                 | `0 0 0`                            | `READY`            |
 
-<span style="color: blue; font-weight: bold;">Frame keyword</span> - Frame keyword used on every line of a frame in a state's definition
+[Frame keyword]{style="color: blue; font-weight: bold;"} - Frame keyword used on every line of a frame in a state's definition
 
-<span style="color: red; font-weight: bold;">Frame index</span> - The index of the list of images that have been loaded to display
+[Frame index]{style="color: red; font-weight: bold;"} - The index of the list of images that have been loaded to display
 
-<span style="color: green; font-weight: bold;">Duration on screen</span> This is the length in seconds of how long to display the image for
+[Duration on screen]{style="color: green; font-weight: bold;"} This is the length in seconds of how long to display the image for
 
-<span style="color: orange; font-weight: bold;">XYZ offsets (only for weapons)</span> - This is an XYZ offset used for weapons, Allows for on screen position adjustment
+[XYZ offsets (only for weapons)]{style="color: orange; font-weight: bold;"} - This is an XYZ offset used for weapons, Allows for on screen position adjustment
 
-<span style="color: purple; font-weight: bold;">Action to take</span> - The action to perform on this frame. Default is none and will make the frame loop.**
+[Action to take]{style="color: purple; font-weight: bold;"} - The action to perform on this frame. Default is none and will make the frame loop.\*\*
 
->**Here we're Performing the ready action. This action is only necessary to be called before a weapon or enemy can attack. In this case we're using only a decoration and the decoration entity does not support the attack state so essentially this does nothing
+> \*\*Here we're Performing the ready action. This action is only necessary to be called before a weapon or enemy can attack. In this case we're using only a decoration and the decoration entity does not support the attack state so essentially this does nothing
 
 [fsm](f7a50bc1-d70b-4133-823c-4f7370e0ea70?machineId=94fa47ad-0e4b-461c-8865-4e04f15a520d&mode=design)
 
-## Second half (implementation and application of blah blah) 
+#### Translating it into English
+
+## Second half (implementation and application of blah blah)
