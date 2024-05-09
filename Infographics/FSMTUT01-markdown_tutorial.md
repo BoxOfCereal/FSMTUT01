@@ -13,15 +13,26 @@ Users of EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="ma
 
 I assume you know what a computer is and that's pretty much it.
 
+### In what way will this material be Presented?
+> "Wisdom comes from understanding simple things deeply" - Twain maybe
+
+I have no pedagogic background except pretending to tutor in college. 
+
+My aim is to give you the smallest working model of `Finite State Machines` (Theory and implementation) so that you can understand all the moving pieces of EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">'s state machines.
+
+
 ### who is the author?
 
 me
 
 ### Structure of document
 
-First half lecture blah blah
+#### First half lecture blah blah
+This section has some bare bones theory for those who've never even heard of a state machine. It then ends with an explanation of how to create a state machine in EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">. 
 
-Second half implementation and application of blah blah
+There are some bonus assignment that can be completed in 1ish minutes just to double check and see if you understand. No tricks, nothing that's not from the material.
+
+#### Second half implementation and application of blah blah
 
 ## First half (lecture blah blah)
 
@@ -114,30 +125,82 @@ Why anyone would do that <span style="color:grey">(For the tutorial! 🤓)</span
 
 That's the intrinsic power of the state machine. You can boil down sophisticated decision making Processes or Respond to specific events in consistent reliable ways using logic.
 
-So as you continue with this tutorial <span style="color:grey">(And after 🙏)</span> try to think about everyday objects That could be broken down into a series of <span style="background-color:#4D4F5F !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 3px;">STATES</span> and <span style="background-color:#2949A5 !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 14px;">inputs</span>.
+So as you continue with this tutorial <span style="color:grey">(And after 🙏)</span> try to think about everyday objects That could be broken down into a series of <span style="background-color:#4D4F5F !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 3px;">STATES</span> and <span style="background-color:#2949A5 !important;color:white;padding:6px;padding-left:10px;padding-right:10px; border-radius: 14px;">inputs</span>.(Radios, TV's, washing machines...)
 
 ### Summary of part one <span style="color:grey">(condensed blah blah )</span>
 In summary state machines are conceptual tools used to model Systems. These systems are comprised of known states and known actions Actions and inputs. The systems can only ever be in the predefined states it can only ever take predefined actions and respond to predefined signals.
 
 That is a lot of boring text thanks for bearing with all the prerequisite stuff now we can start using what we know to make state machines inside EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">!
 
-### How do you create a state machine (In EFPSE 1.10.4)?
-OK finally we're here! Let's make a state machine in EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">! 
+<details class="bonus-assignment">
+  <summary><span style="color:grey">Bonus assignment</span></summary>
+  
+  <p>On a piece of paper draw out your own state machine!</p>
+  <p>Try to think about something you've interacted with recently that you could break down into a state machine. (States and inputs)</p>
+  <p>I made a bunch already but here's one last one</p>
+  <img src="wolf.png">
+  <img src="dummy.png">
+  <details class="bonus-assignment">
+    <summary><span style="color:grey">answer</span></summary>
+    <p>This is the answer</p>
+    </details>
+</details>
 
-But how do we do that? Thankfully the [wiki](https://pixelwolf.net/efpse/wiki/index.php?title=Main_Page)  has an example of a [simple state machine for a decoration](https://pixelwolf.net/efpse/wiki/index.php?title=FSM#Basic_FSM_for_decorations:). So we'll build an example based off that with some of my own twists! And we'll do it step by step and analyze every single component starting with how to describe our state machine in EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">.
+
+### How do you create a state machine (In EFPSE 1.10.4)?
+<div style="max-width: 250px; padding: 10px; background-color: #DCF8C6; border-radius: 15px; position: relative; margin: 20px;">
+    <img src="wolf.png" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%; position: absolute; top: 50%; left: -42px; transform: translate(-50%, -50%);">
+    <div style="display: flex; align-items: center; margin-left: 22px;">
+        <span style="font-size: 14px;">OK finally we're here! Let's make a state machine in EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">!
+        <br>...<br>...<br>
+        But how do we do that?  </span>
+    </div>
+    <div style="position: absolute; top: 50%; left: -15px; border-style: solid; border-width: 8px 15px 8px 0; border-color: transparent #DCF8C6 transparent transparent; content: '';"></div>
+</div>
+
+<div style="max-width: 250px; padding: 10px; background-color: #DCF8C6; border-radius: 15px; position: relative; margin: 20px;">
+    <div style="display: flex; align-items: center;">
+        <span style="font-size: 14px;">Thankfully the <a href="https://pixelwolf.net/efpse/wiki/index.php?title=Main_Page">wiki</a>  has an example of a <a href="https://pixelwolf.net/efpse/wiki/index.php?title=FSM#Basic_FSM_for_decorations:">simple state machine for a decoration</a>. So we'll build an example based off that with some of our own twists! And we'll do it step by step and analyze every single component starting with how to describe our state machine in EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px">.</span>
+    </div>
+    <div style="position: absolute; top: 50%; right: -15px; border-style: solid; border-width: 8px 0 8px 15px; border-color: transparent transparent transparent #DCF8C6; content: '';"></div>
+    <img src="quokka_new.png" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%; position: absolute; top: 50%; right: -42px; transform: translate(50%, -50%);">
+</div>
+
+
+
+
+
 
 
 
 
 
 #### Overview
-EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px"> State machines are described declaratively in a script-like language saved in a text file with the ext `.states`. These state scripts should be located in the 📂Project/States folder.
+Within the EFPSC game engine state machines are used for three different components. 
+<!-- These really should be diagrams in a table -->
+Weapons, decorations, and enemies. 
 
+With these state machines we can display frames of animation,Play sounds,emit two different types of particles,Set and read variables, do simple calculations, and jump to different states Conditionaly or otherwise.(And probably a whole bunch of stuff I've never even thought of)
+
+But in this specific tutorial we'll just take a look at basic functionality for the basic decoration state machine..
+
+EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo" style="margin-bottom:-8px"> State machines are described declaratively in a script-like language saved in a text file with the ext `.states`. These state scripts should be located in the <span style="color:#0070C1;cursor:help" title="📁C:\Users\<user>\OneDrive\Desktop\Projects\Project\States">📂Project/States</span> folder.
+
+
+
+<details class="bonus-assignment">
+  <summary><span style="color:grey">Can't find the folder?</span></summary>
+  <p>The    folder is Is wherever EFPSE saves its projects. I'm pretty sure by default that Located in the same directory as the EFPSE  executable `.exe`. I run mine on my desktop so on my desktop there is a folder called 📁projects that contains examples of the folder's namesakes. Here's the full path:</p>
+  <p>📂C:\Users\User\OneDrive\Desktop\Projects\FSMTUT01</p>
+  <p>and an image of the inside of the 📂Project/ folder</p>
+  <img src="ss_states.png" alt="ss_states.png">
+</details>
 
 ##### EXAMPLE
 Let's take a look at the example script:
 
-📂Project/States/Decoration.states
+
+<span style="color:#0070C1;cursor:help" title="📁C:\Users\<user>\OneDrive\Desktop\Projects\Project\States\Decoration.states">📂Project/States/Decoration.states</span>
 
 ``` states
 image Decoration 0 4
@@ -227,16 +290,21 @@ Now let's compare that to a diagram of what's going on;
 
 As we can see both the script and the diagram have three states which are idle death and dead, But what's not included in the script is a <span style="color: transparent; background-image: linear-gradient(to right, black, #f0f0f0); -webkit-background-clip: text; background-clip: text; text-fill-color: transparent;">hidden signal...🥷</span>
 
-In EFPSE Things that have HP like breakable decorations enemies in the player are hard coded to do certain things and one of them is to always check if their hp is above 0. 
+In EFPSE Things that have HP <img src="../HUD/HP.png"> like breakable decorations, enemies ,and the player are hard coded to do certain things and one of them is to always check if their hp is above 0. 
 
 If this happens the state machine stops what it's doing immediately and it goes to the death state.
 >This happens no matter what state the entity is in. This includes any custom states that you have defined as well. 
 
-From here we can control what it does but most commonly we transition to the dead state which is. Nothing happens.
+From here we can control what it does but most commonly we transition to the dead state where... Nothing happens.
+
+<!-- To do put the picture of the decoration option -->
+I'm pretty sure the state doesn't even loop. And inside the decoration options if you click the check box destroy on death the entity will be removed.
 
 
 ##### back 2 a bit deeper
 Now let's dive back in just a little bit deeper and look at the simulation that I have prepared. It works just like the stoplight simulation but this time I've made it so that it mirrors our decoration state machine.
+
+Inside the states there are mockups of what happens inside EFPSE's state machine. They are only for demonstration purposes. The intention here is to convey that when the state machine is in a specific state it executes each frame while in that state until it goes to another state.
 <iframe src="https://stately.ai/registry/editor/embed/f7a50bc1-d70b-4133-823c-4f7370e0ea70?machineId=94fa47ad-0e4b-461c-8865-4e04f15a520d" width="90%" height="400px" frameborder="0">
 https://stately.ai/registry/editor/&mode=design
 </iframe>
