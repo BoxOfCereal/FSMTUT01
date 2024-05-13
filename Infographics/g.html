@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+</head>
+
+<body>
+    <h4>Image Generator</h4>
+    <p>This application will take in a state's file from EFPSE <img src="EFPSE_icon.png" width="28px" alt="EFPSE logo"
+            style="margin-bottom:-8px"> and generate an image for each frame.</p>
+
+    <span>⬇️📝</span>        
+    <h5>INPUT</h5>
+    <pre>
+image Decoration 0 4
+
+state IDLE NONE 0
+frame 0 0.25 0 0 0 NONE
+frame 0 0.25 0 0 0 READY
+
+state DEATH DEAD 0
+frame 1 0.166 0 0 0 NONE
+frame 2 0.166 0 0 0 NONE
+frame 3 0.166 0 0 0 NONE
+
+state DEAD NONE 0
+frame 4 0.25 0 0 0 NONE
+frame 4 0.25 0 0 0 NONE
+    </pre>
+    <span>⬇️📁</span>
+    <!-- LList of image names-->
+    <!-- Styles for the image container -->
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        .left-column {
+            width: 45%;
+        }
+
+        .right-column {
+            width: 45%;
+        }
+
+        #imageGrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .image-item {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <div class="container">
+        <div class="left-column">
+            <h4>OUTPUT</h4>
+            <code>images.zip</code>
+            <ul id="imageList">
+                <li>🖼️ Decoration0.png</li>
+                <li>🖼️ Decoration1.png</li>
+                <li>🖼️ Decoration2.png</li>
+                <li>🖼️ Decoration3.png</li>
+                <li>🖼️ Decoration4.png</li>
+                <li>🖼️ Decoration5.png</li>
+                <li>🖼️ Decoration6.png</li>
+            </ul>
+        </div>
+        <span>➡️🖼️</span>
+        <div class="right-column">
+            <h4>Images</h4>
+            <div id="imageGrid">
+                <!-- Example images -->
+                <img class="image-item" src="Decoration0.png" alt="Decoration0">
+                <img class="image-item" src="Decoration1.png" alt="Decoration1">
+                <img class="image-item" src="Decoration2.png" alt="Decoration2">
+                <img class="image-item" src="Decoration3.png" alt="Decoration3">
+                <img class="image-item" src="Decoration4.png" alt="Decoration4">
+                <img class="image-item" src="Decoration5.png" alt="Decoration5">
+                <img class="image-item" src="Decoration6.png" alt="Decoration6">
+            </div>
+        </div>
+    </div>
+
+    <p>Paste your script here:</p>
+    <textarea id="scriptInput" rows="20" cols="50" placeholder="Paste your script here..."></textarea><br>
+    <p>Once you click this button a link will appear below and you can click on that link to download a zip file named <code>📁images.zip</code> that contains your debug images</p>
+    <button onclick="generateImages()">Generate Images</button><br>
+    <a id="downloadLink" style="display: none;">Download Images</a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script>
+        function generateImages() {
+            const scriptContent = document.getElementById('scriptInput').value.trim();
+            const scriptLines = scriptContent.split('\n');
+
+            let frameCounters = {};
+            let imageName = '';
+            let stateName = '';
+            let imageCounter = 0;
+            let fn = 0
+            let zip = new JSZip();
+
+            let imageFound = false; // Flag to track if an image has been found
+
+            scriptLines.forEach((line, index) => {
+                const parts = line.split(' ');
+                console.log(parts);
+
+                if (parts[0] === "state") {
+                    stateName = parts[1];
+                    fn = 0
+                }
+                if (parts[0] === 'image' && !imageFound) {
+                    imageName = parts.slice(1)[0];
+                    console.log(imageName);
+                    frameCounters[imageName] = 0;
+                    imageCounter++;
+                    imageFound = true; // Set the flag to true after finding the first image
+                } else if (parts[0] === 'frame' && imageFound) {
+                    const frameNumber = frameCounters[imageName]++;
+                    fn++
+                    const frameStatement = parts.slice(1, 6).join(' ');
+                    const action = parts.slice(6).join(' ');
+                    console.log("action: ", action);
+                    // console.log(frameStatement);
+                    // const stateName = parts[parts.length - 1];
+                    const text = `State: ${stateName}\nFrame: ${fn}\nFrame Statement: ${frameStatement}\nAction: ${action}`;
+                    // const text = `${stateName}\n${fn}\n${frameStatement}\n${action}`;
+                    const imageNameWithNumber = `${imageName}${frameNumber}`;
+                    console.log(text);
+                    createImage(text, imageNameWithNumber, zip);
+                }
+            });
+
+            zip.generateAsync({ type: "blob" })
+                .then(function (content) {
+                    const downloadLink = document.getElementById('downloadLink');
+                    downloadLink.href = window.URL.createObjectURL(content);
+                    downloadLink.download = 'images.zip';
+                    downloadLink.style.display = 'inline';
+                });
+        }
+
+        function createImage(text, imageName, zip) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 400;
+            canvas.height = 200;
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'black';
+            ctx.font = '14px Arial';
+            const lines = text.split('\n');
+            lines.forEach((line, index) => {
+                ctx.fillText(line, 10, 20 + index * 20);
+            });
+            const dataURL = canvas.toDataURL('image/png').split(',')[1];
+            zip.file(`${imageName}.png`, dataURL, { base64: true });
+        }
+    </script>
+</body>
+
+</html>
